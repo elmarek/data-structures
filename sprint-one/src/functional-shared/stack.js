@@ -4,7 +4,6 @@ var Stack = function() {
   var newStack = {};
   newStack.storage = {};
   _.extend(newStack, stackMethods);
-  console.log(newStack);
   return newStack;
 };
 
@@ -24,6 +23,3 @@ stackMethods.pop = function() {
 stackMethods.size = function() {
   return Object.keys(this.storage).length;
 };
-
-
-
